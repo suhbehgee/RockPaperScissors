@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <p> Enter game() in the console to start a 5 round match</p>    
+    <p> Enter game() in the console to start a 5 round match</p>
+
+    <div class="rpsImages playerImages">
+        <img class="playerRps" id="playerRock" width=150px height=auto src="images\rock_640.png" alt="Rock">
+        <img class="playerRps" id="playerPaper" width=150px height=auto src="images\paper_640.png" alt="Paper">
+        <img class="playerRps" id="playerScissors" width=150px height=auto src="images\scissors_640.png" alt="Scissors">
+    </div>
+
+    <div class="rpsImages computerImages">
+        <img class="computerRps" id="computerRock" width=150px height=auto src="images\rock_640.png" alt="Rock">
+        <img class="computerRps" id="computerPaper" width=150px height=auto src="images\paper_640.png" alt="Paper">
+        <img class="computerRps" id="computerScissors" width=150px height=auto src="images\scissors_640.png" alt="Scissors">
+    </div>
+
+    <div id="scores">
+        <div id="playerScoreBox" class="scoreBox">
+            <p>Player Wins: </p>
+            <p id="playerWin">0</p>
+        </div>
+        <div id="computerScoreBox" class="scoreBox">
+            <p>Computer Wins: </p>
+            <p id="computerWin">0</p>
+        </div>
+        <div id="drawScoreBox" class="scoreBox">
+            <p>Draws: </p>
+            <p id="draw">0</p>
+        </div>
+    </div>
+
+    <button id="resetBtn">Reset Scores</button>
+
+    <!-- The Modal -->
+    <div class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+            <p id="whoWonText">Who won?</p>
+            <button id="startOverBtn">Start Over?</button>
+        </div>
+    </div>
+  
+  </div>
+
+    <p id="para">This is a really lonh line sdkjs d alskf mslkjd lakujksl aslkja ;laslkjas laijs 
+            lkasalksmdd and this i sthe end</p>
 </body>
 </html>
